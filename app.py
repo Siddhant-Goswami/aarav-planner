@@ -36,7 +36,7 @@ def respond(message, history):
 demo = gr.ChatInterface(
     fn=respond,
     examples=[GOLDEN_INPUT],
-    title="Aarav's Workflow Planner",
+    title="Aarav's Workflow Planner v2",
 )
 # Laptop: opens on port 7860. Render: uses the port Render hands the app.
 demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
