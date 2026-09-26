@@ -39,4 +39,4 @@ demo = gr.ChatInterface(
     title="Aarav's Workflow Planner",
 )
 # Laptop: opens on port 7860. Render: uses the port Render hands the app.
-demo.launch()
+demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
